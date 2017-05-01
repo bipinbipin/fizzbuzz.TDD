@@ -8,6 +8,7 @@ public class FizzBuzz {
     public FizzBuzz() {}
 
     public String evaluate(int number) {
+
         if (isMultipleOf3(number) && isMultipleOf5(number))
             return "FizzBuzz";
         else if (isMultipleOf3(number))
@@ -20,16 +21,10 @@ public class FizzBuzz {
     }
 
     public static boolean isMultipleOf3(int number) {
-        if (0 == number % 3)
-            return true;
-        else
-            return false;
+        return (0 == number % 3) ? true : false;
     }
 
     public static boolean isMultipleOf5(int number) {
-        if (0 == number % 5)
-            return true;
-        else
-            return false;
+        return (0 == number % 5) ? true : false;
     }
 }
